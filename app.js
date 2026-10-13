@@ -10,6 +10,46 @@
   const nextButton = document.getElementById('nextBtn');
   const fullscreenButton = document.getElementById('fullscreenBtn');
 
+  // Keep slide footers outside the measured body so the fitting area stays clear.
+  const slideBodies = slides.map(slide => {
+    const body = document.createElement('div');
+    body.className = 'slide-content';
+    [...slide.children].forEach(child => {
+      if (!child.matches('.slide-foot,.cover-bottom,.close-bottom,.section-label,.slide-no')) body.append(child);
+    });
+    slide.prepend(body);
+    return body;
+  });
+
+  function fitSlides() {
+    const viewportHeight = window.innerHeight;
+    slides.forEach((slide, index) => {
+      slide.classList.add('measure');
+      const body = slideBodies[index];
+      body.style.zoom = '1';
+      body.style.width = '100%';
+      const styles = getComputedStyle(slide);
+      const paddingTop = parseFloat(styles.paddingTop) || 0;
+      const paddingBottom = parseFloat(styles.paddingBottom) || 0;
+      const availableWidth = slide.clientWidth - (parseFloat(styles.paddingLeft) || 0) - (parseFloat(styles.paddingRight) || 0);
+      const naturalHeight = Math.ceil(body.scrollHeight);
+      const availableHeight = Math.max(240, viewportHeight - paddingTop - paddingBottom - 12);
+      const scale = naturalHeight > 0 ? Math.min(1, (availableHeight / naturalHeight) * .985) : 1;
+      body.style.zoom = scale.toFixed(3);
+      body.style.width = `${availableWidth / scale}px`;
+      slide.classList.remove('measure');
+      slide.style.setProperty('--fit-scale', scale.toFixed(3));
+    });
+  }
+  let fitFrame = 0;
+  const scheduleFit = () => {
+    cancelAnimationFrame(fitFrame);
+    fitFrame = requestAnimationFrame(fitSlides);
+  };
+  window.addEventListener('resize', scheduleFit, { passive: true });
+  window.addEventListener('load', scheduleFit, { once: true });
+  slides.forEach(slide => slide.querySelectorAll('img').forEach(image => image.addEventListener('load', scheduleFit, { once: true })));
+
   // Rebuild the controls as the compact floating navigation used in the reference deck.
   const oldControls = document.querySelector('.deck-controls');
   const controls = document.createElement('nav');
@@ -79,6 +119,7 @@
     }
     current = next;
     currentCounter.textContent = `${pad(current + 1)} / ${pad(slides.length)}`;
+    scheduleFit();
     progressBar.style.width = `${((current + 1) / slides.length) * 100}%`;
     document.title = `${pad(current + 1)} · ${slides[current].dataset.title} — Callbot y tế`;
     pageMark.classList.toggle('on-dark', slides[current].classList.contains('slide-cover') || slides[current].classList.contains('slide-close'));
