@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 300" role="img" aria-labelledby="title desc">
+  <title id="title">So sánh tỷ lệ đạt của hai lần đánh giá</title>
+  <desc id="desc">Đánh giá text ngày 30 tháng 9 đạt 184 trong 212 bài kiểm tra, có hai vi phạm SF-05. Đánh giá giọng nói ngày 13 tháng 10 đạt 168 trong 212, không có severe failure.</desc>
+  <rect width="1080" height="300" rx="20" fill="#fff"/>
+  <text x="34" y="40" fill="#064e3b" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="1">OUTCOME BENCHMARK · 212 CASES</text>
+  <text x="34" y="93" fill="#264638" font-family="Arial,sans-serif" font-size="17" font-weight="700">30 SEP · TEXT ONLY</text>
+  <text x="34" y="119" fill="#7c9487" font-family="Arial,sans-serif" font-size="12">3 lần chạy · 1 skip mỗi lần</text>
+  <rect x="250" y="75" width="550" height="28" rx="14" fill="#e9f2ed"/>
+  <rect x="250" y="75" width="477" height="28" rx="14" fill="#00875a"/>
+  <text x="744" y="96" fill="#064e3b" font-family="Arial,sans-serif" font-size="17" font-weight="800">184 / 212</text>
+  <text x="250" y="122" fill="#526b5e" font-family="Arial,sans-serif" font-size="12">PASS 86.8% · 27 FAIL</text>
+  <text x="34" y="177" fill="#264638" font-family="Arial,sans-serif" font-size="17" font-weight="700">13 OCT · VOICE E2E</text>
+  <text x="34" y="203" fill="#7c9487" font-family="Arial,sans-serif" font-size="12">1 lần chạy · Soniox STT</text>
+  <rect x="250" y="159" width="550" height="28" rx="14" fill="#e9f2ed"/>
+  <rect x="250" y="159" width="435" height="28" rx="14" fill="#10b981"/>
+  <text x="702" y="180" fill="#064e3b" font-family="Arial,sans-serif" font-size="17" font-weight="800">168 / 212</text>
+  <text x="250" y="206" fill="#526b5e" font-family="Arial,sans-serif" font-size="12">PASS 79.2% · 44 FAIL</text>
+  <line x1="833" y1="42" x2="833" y2="254" stroke="#e2ece7"/>
+  <text x="864" y="64" fill="#7c9487" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">SEVERE FAILURES</text>
+  <text x="864" y="126" fill="#e11d48" font-family="Arial,sans-serif" font-size="34" font-weight="800">2</text>
+  <text x="904" y="124" fill="#526b5e" font-family="Arial,sans-serif" font-size="12">SF-05 cases</text>
+  <text x="864" y="190" fill="#00875a" font-family="Arial,sans-serif" font-size="34" font-weight="800">0</text>
+  <text x="904" y="188" fill="#526b5e" font-family="Arial,sans-serif" font-size="12">SF-01…05</text>
+  <rect x="32" y="238" width="1016" height="38" rx="10" fill="#f0f7f3"/>
+  <text x="52" y="262" fill="#264638" font-family="Arial,sans-serif" font-size="12" font-weight="700">DIFFERENT TEST CONDITIONS</text>
+  <text x="270" y="262" fill="#526b5e" font-family="Arial,sans-serif" font-size="12">Text-only × 3 runs</text>
+  <text x="470" y="262" fill="#00875a" font-family="Arial,sans-serif" font-size="14" font-weight="700">→</text>
+  <text x="500" y="262" fill="#526b5e" font-family="Arial,sans-serif" font-size="12">Audio through Soniox × 1 run</text>
+</svg>

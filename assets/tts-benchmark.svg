@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 330" role="img" aria-labelledby="title desc">
+  <title id="title">Benchmark chất lượng kỹ thuật và độ trễ của bốn nhà cung cấp TTS</title>
+  <desc id="desc">Google Neural2-A đạt điểm 4,34 trên 5, đọc đúng dữ liệu 96,6 phần trăm, p95 278 mili giây. VieNeu lần lượt 3,97, 96,6 phần trăm, 593 mili giây. Piper 2,78, 58,6 phần trăm, 662 mili giây. Edge 2,09, 79,3 phần trăm, 12693 mili giây.</desc>
+  <rect width="1080" height="330" rx="18" fill="#fff"/>
+  <text x="30" y="36" fill="#064e3b" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="1">TTS PROVIDER BENCHMARK · 20 CÂU</text>
+  <text x="275" y="71" fill="#7c9487" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">TECH SCORE / 5</text>
+  <text x="510" y="71" fill="#7c9487" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">READ-BACK ACCURACY</text>
+  <text x="815" y="71" fill="#7c9487" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">TTFA p95</text>
+  <g font-family="Arial,sans-serif">
+    <text x="30" y="117" fill="#264638" font-size="14" font-weight="700">Google Neural2-A¹</text>
+    <rect x="275" y="95" width="170" height="22" rx="11" fill="#edf4f0"/><rect x="275" y="95" width="147" height="22" rx="11" fill="#00875a"/><text x="455" y="112" fill="#064e3b" font-size="14" font-weight="800">4.34</text>
+    <rect x="510" y="95" width="205" height="22" rx="11" fill="#edf4f0"/><rect x="510" y="95" width="198" height="22" rx="11" fill="#00875a"/><text x="724" y="112" fill="#064e3b" font-size="14" font-weight="800">96.6%</text><text x="820" y="112" fill="#00875a" font-size="14" font-weight="800">278 ms</text>
+    <text x="30" y="178" fill="#264638" font-size="14" font-weight="700">VieNeu</text>
+    <rect x="275" y="156" width="170" height="22" rx="11" fill="#edf4f0"/><rect x="275" y="156" width="135" height="22" rx="11" fill="#10b981"/><text x="455" y="173" fill="#064e3b" font-size="14" font-weight="800">3.97</text>
+    <rect x="510" y="156" width="205" height="22" rx="11" fill="#edf4f0"/><rect x="510" y="156" width="198" height="22" rx="11" fill="#10b981"/><text x="724" y="173" fill="#064e3b" font-size="14" font-weight="800">96.6%</text><text x="820" y="173" fill="#264638" font-size="14" font-weight="700">593 ms</text>
+    <text x="30" y="239" fill="#264638" font-size="14" font-weight="700">Piper</text>
+    <rect x="275" y="217" width="170" height="22" rx="11" fill="#edf4f0"/><rect x="275" y="217" width="95" height="22" rx="11" fill="#8fbfac"/><text x="455" y="234" fill="#264638" font-size="14" font-weight="800">2.78</text>
+    <rect x="510" y="217" width="205" height="22" rx="11" fill="#edf4f0"/><rect x="510" y="217" width="120" height="22" rx="11" fill="#8fbfac"/><text x="645" y="234" fill="#264638" font-size="14" font-weight="800">58.6%</text><text x="820" y="234" fill="#264638" font-size="14" font-weight="700">662 ms</text>
+    <text x="30" y="300" fill="#264638" font-size="14" font-weight="700">Edge HoaiMy</text>
+    <rect x="275" y="278" width="170" height="22" rx="11" fill="#edf4f0"/><rect x="275" y="278" width="71" height="22" rx="11" fill="#e3ad74"/><text x="455" y="295" fill="#264638" font-size="14" font-weight="800">2.09</text>
+    <rect x="510" y="278" width="205" height="22" rx="11" fill="#edf4f0"/><rect x="510" y="278" width="163" height="22" rx="11" fill="#e3ad74"/><text x="686" y="295" fill="#264638" font-size="14" font-weight="800">79.3%</text><text x="820" y="295" fill="#b45309" font-size="14" font-weight="800">12,693 ms</text>
+  </g>
+  <text x="30" y="321" fill="#7c9487" font-family="Arial,sans-serif" font-size="9">¹ Bot hiện không chạy Google TTS; provider đã tắt trên Staging từ 07/10.</text>
+</svg>

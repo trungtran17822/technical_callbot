@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 300" role="img" aria-labelledby="title desc">
+  <title id="title">Benchmark độ chính xác và độ trễ của ba nhà cung cấp STT</title>
+  <desc id="desc">Google WER 5 phần trăm và p95 1361 mili giây; Deepgram WER 5,1 phần trăm và p95 912 mili giây; Groq WER 7,8 phần trăm và p95 619 mili giây.</desc>
+  <rect width="1080" height="300" rx="18" fill="#fff"/>
+  <text x="32" y="36" fill="#064e3b" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="1">STT PROVIDER BENCHMARK · 100 CÂU GIỌNG THẬT</text>
+  <text x="255" y="75" fill="#7c9487" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">WORD ERROR RATE ↓</text>
+  <text x="690" y="75" fill="#7c9487" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">LATENCY p95 ↓</text>
+  <text x="32" y="120" fill="#264638" font-family="Arial,sans-serif" font-size="14" font-weight="700">Google</text>
+  <rect x="255" y="100" width="300" height="25" rx="12" fill="#edf4f0"/><rect x="255" y="100" width="192" height="25" rx="12" fill="#00875a"/>
+  <text x="462" y="118" fill="#064e3b" font-family="Arial,sans-serif" font-size="14" font-weight="800">5.0%</text>
+  <rect x="690" y="100" width="290" height="25" rx="12" fill="#edf4f0"/><rect x="690" y="100" width="263" height="25" rx="12" fill="#8fbfac"/>
+  <text x="965" y="118" fill="#264638" font-family="Arial,sans-serif" font-size="13" font-weight="800">1,361 ms</text>
+  <text x="32" y="181" fill="#264638" font-family="Arial,sans-serif" font-size="14" font-weight="700">Deepgram</text>
+  <rect x="255" y="161" width="300" height="25" rx="12" fill="#edf4f0"/><rect x="255" y="161" width="196" height="25" rx="12" fill="#00875a"/>
+  <text x="466" y="179" fill="#064e3b" font-family="Arial,sans-serif" font-size="14" font-weight="800">5.1%</text>
+  <rect x="690" y="161" width="290" height="25" rx="12" fill="#edf4f0"/><rect x="690" y="161" width="177" height="25" rx="12" fill="#10b981"/>
+  <text x="878" y="179" fill="#064e3b" font-family="Arial,sans-serif" font-size="13" font-weight="800">912 ms</text>
+  <text x="32" y="242" fill="#264638" font-family="Arial,sans-serif" font-size="14" font-weight="700">Groq</text>
+  <rect x="255" y="222" width="300" height="25" rx="12" fill="#edf4f0"/><rect x="255" y="222" width="300" height="25" rx="12" fill="#62a7ba"/>
+  <text x="570" y="240" fill="#367486" font-family="Arial,sans-serif" font-size="14" font-weight="800">7.8%</text>
+  <rect x="690" y="222" width="290" height="25" rx="12" fill="#edf4f0"/><rect x="690" y="222" width="120" height="25" rx="12" fill="#62a7ba"/>
+  <text x="821" y="240" fill="#367486" font-family="Arial,sans-serif" font-size="13" font-weight="800">619 ms</text>
+  <text x="255" y="276" fill="#7c9487" font-family="Arial,sans-serif" font-size="10">WER: % thấp hơn là tốt · latency: mili giây thấp hơn là nhanh hơn</text>
+  <text x="690" y="276" fill="#7c9487" font-family="Arial,sans-serif" font-size="10">Không provider nào đạt mọi ngưỡng mục tiêu</text>
+</svg>

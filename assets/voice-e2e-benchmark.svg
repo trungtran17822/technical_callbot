@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" role="img" aria-labelledby="title desc">
+  <title id="title">Kết quả benchmark end-to-end bằng giọng nói ngày 13 tháng 10</title>
+  <desc id="desc">168 trong 212 bài kiểm tra đạt. Trong 44 lỗi, 24 do bot và 20 do nhận dạng giọng nói Soniox.</desc>
+  <rect width="860" height="360" rx="20" fill="#fff"/>
+  <text x="34" y="42" fill="#064e3b" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="1">VOICE E2E · 13 OCT 2026</text>
+  <text x="34" y="95" fill="#00875a" font-family="Arial,sans-serif" font-size="40" font-weight="800">168</text>
+  <text x="120" y="94" fill="#526b5e" font-family="Arial,sans-serif" font-size="15">PASS / 212 TESTS</text>
+  <rect x="34" y="116" width="792" height="32" rx="16" fill="#f8e9e8"/>
+  <rect x="34" y="116" width="628" height="32" rx="16" fill="#00875a"/>
+  <text x="34" y="174" fill="#526b5e" font-family="Arial,sans-serif" font-size="13">PASS 79.2%</text>
+  <text x="730" y="174" fill="#b46152" font-family="Arial,sans-serif" font-size="13" font-weight="700">FAIL 20.8%</text>
+  <line x1="34" y1="203" x2="826" y2="203" stroke="#e2ece7"/>
+  <text x="34" y="237" fill="#064e3b" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1">44 FAILED CASES · ROOT CAUSE SPLIT</text>
+  <text x="34" y="286" fill="#264638" font-family="Arial,sans-serif" font-size="15" font-weight="700">Bot logic</text>
+  <rect x="164" y="266" width="510" height="25" rx="12" fill="#e9f2ed"/>
+  <rect x="164" y="266" width="278" height="25" rx="12" fill="#00875a"/>
+  <text x="460" y="284" fill="#064e3b" font-family="Arial,sans-serif" font-size="15" font-weight="800">24</text>
+  <text x="34" y="330" fill="#264638" font-family="Arial,sans-serif" font-size="15" font-weight="700">Soniox STT</text>
+  <rect x="164" y="310" width="510" height="25" rx="12" fill="#e9f2ed"/>
+  <rect x="164" y="310" width="232" height="25" rx="12" fill="#62a7ba"/>
+  <text x="414" y="328" fill="#367486" font-family="Arial,sans-serif" font-size="15" font-weight="800">20</text>
+  <rect x="708" y="225" width="118" height="112" rx="15" fill="#ecfdf5"/>
+  <text x="730" y="262" fill="#7c9487" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">SEVERE</text>
+  <text x="730" y="305" fill="#00875a" font-family="Arial,sans-serif" font-size="30" font-weight="800">0 SF</text>
+</svg>
