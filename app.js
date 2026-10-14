@@ -1,7 +1,11 @@
 (() => {
   const deck = document.getElementById('deck');
+  const evalQualityTemplate = document.getElementById('evalQualityTemplate');
   const qcTemplate = document.getElementById('qcBenchmarkTemplate');
   const beforeSpeechBenchmarks = document.getElementById('slide-14');
+  if (evalQualityTemplate && beforeSpeechBenchmarks) {
+    beforeSpeechBenchmarks.before(evalQualityTemplate.content.firstElementChild.cloneNode(true));
+  }
   if (qcTemplate && beforeSpeechBenchmarks) {
     beforeSpeechBenchmarks.before(qcTemplate.content.firstElementChild.cloneNode(true));
   }
