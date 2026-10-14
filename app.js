@@ -2,12 +2,20 @@
   const deck = document.getElementById('deck');
   const evalQualityTemplate = document.getElementById('evalQualityTemplate');
   const qcTemplate = document.getElementById('qcBenchmarkTemplate');
+  const appendixTemplateIds = ['evalFailureTemplate', 'evalSttTemplate', 'evalRuntimeTemplate', 'evalLimitsTemplate'];
+  const beforeClosingSlide = document.getElementById('slide-17');
   const beforeSpeechBenchmarks = document.getElementById('slide-14');
   if (evalQualityTemplate && beforeSpeechBenchmarks) {
     beforeSpeechBenchmarks.before(evalQualityTemplate.content.firstElementChild.cloneNode(true));
   }
   if (qcTemplate && beforeSpeechBenchmarks) {
     beforeSpeechBenchmarks.before(qcTemplate.content.firstElementChild.cloneNode(true));
+  }
+  if (beforeClosingSlide) {
+    appendixTemplateIds.forEach(id => {
+      const template = document.getElementById(id);
+      if (template) beforeClosingSlide.before(template.content.firstElementChild.cloneNode(true));
+    });
   }
   const slides = [...document.querySelectorAll('.slide')];
   const overview = document.getElementById('overview');
@@ -20,6 +28,8 @@
   const fullscreenButton = document.getElementById('fullscreenBtn');
   const overviewCount = document.querySelector('.overview-head h2 em');
   if (overviewCount) overviewCount.textContent = `${slides.length} slides`;
+  const progressTotal = document.querySelector('.progress-top span:last-child i');
+  if (progressTotal?.nextSibling) progressTotal.nextSibling.textContent = ` ${slides.length}`;
   const closingCount = document.querySelector('.close-bottom span:last-child');
   if (closingCount) closingCount.innerHTML = `THANK YOU <i>✚</i> ${slides.length} / ${slides.length}`;
   const coverCount = document.querySelector('.cover-bottom span:last-child');
