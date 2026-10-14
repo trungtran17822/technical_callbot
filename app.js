@@ -18,6 +18,8 @@
   if (overviewCount) overviewCount.textContent = `${slides.length} slides`;
   const closingCount = document.querySelector('.close-bottom span:last-child');
   if (closingCount) closingCount.innerHTML = `THANK YOU <i>✚</i> ${slides.length} / ${slides.length}`;
+  const coverCount = document.querySelector('.cover-bottom span:last-child');
+  if (coverCount) coverCount.innerHTML = `01 <i>/</i> ${slides.length}`;
 
   // Keep slide footers outside the measured body so the fitting area stays clear.
   const slideBodies = slides.map(slide => {
