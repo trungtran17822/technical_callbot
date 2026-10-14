@@ -1,6 +1,11 @@
 (() => {
-  const slides = [...document.querySelectorAll('.slide')];
   const deck = document.getElementById('deck');
+  const qcTemplate = document.getElementById('qcBenchmarkTemplate');
+  const beforeSpeechBenchmarks = document.getElementById('slide-14');
+  if (qcTemplate && beforeSpeechBenchmarks) {
+    beforeSpeechBenchmarks.before(qcTemplate.content.firstElementChild.cloneNode(true));
+  }
+  const slides = [...document.querySelectorAll('.slide')];
   const overview = document.getElementById('overview');
   const overviewList = document.getElementById('overviewList');
   const currentCounter = document.getElementById('currentNum');
@@ -9,6 +14,10 @@
   const previousButton = document.getElementById('prevBtn');
   const nextButton = document.getElementById('nextBtn');
   const fullscreenButton = document.getElementById('fullscreenBtn');
+  const overviewCount = document.querySelector('.overview-head h2 em');
+  if (overviewCount) overviewCount.textContent = `${slides.length} slides`;
+  const closingCount = document.querySelector('.close-bottom span:last-child');
+  if (closingCount) closingCount.innerHTML = `THANK YOU <i>✚</i> ${slides.length} / ${slides.length}`;
 
   // Keep slide footers outside the measured body so the fitting area stays clear.
   const slideBodies = slides.map(slide => {
